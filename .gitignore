@@ -5,7 +5,7 @@ platforms/android/bin/
 platforms/android/cordova/
 platforms/android/CordovaLib
 platforms/android/gen/
-platforms/android/libs
+platforms/android/libs/
 platforms/android/platform_www/
 platforms/android/res/
 platforms/android/AndroidManifest.xml
