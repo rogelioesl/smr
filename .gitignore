@@ -16,7 +16,7 @@ platforms/android/project.properties
 platforms/android/.classpath
 platforms/android/.project
 platforms/android/.settings
-
 platforms/android/assets/_where-is-www.txt
+
 plugins/
 config.xml
