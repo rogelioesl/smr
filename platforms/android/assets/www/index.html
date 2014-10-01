@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SMR</title>
+        <link href="css/lib/kendo/kendo.common.min.css" rel="stylesheet" />
+        <link href="css/lib/kendo/kendo.default.min.css" rel="stylesheet" />
+        <link href="css/lib/kendo/kendo.mobile.all.min.css" rel="stylesheet" />
+        <link href="css/app/smr.css" rel="stylesheet" />
+        <script src="js/lib/jq/jquery.min.js"></script>
+        <script src="js/lib/kendo/kendo.all.min.js"></script>
+        <script src="js/app/model/user.js"></script>
+        <script src="js/app/vm/login/login.js"></script>
+    </head>
+    <body>
+        <div data-role="view"></div>
+        <div data-role="layout" data-id="overview-layout"  data-platform="ios">
+            <header data-role="header">
+                <div data-role="navbar">                
+                    <span data-role="view-title" />
+                </div>
+            </header>
+            <footer data-role="footer">
+                <div data-role="tabstrip">
+                    <a data-icon="contacts" href="app/login/login.html">Login</a>
+                    <a data-icon="more" href="app/login/register.html">Registro</a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

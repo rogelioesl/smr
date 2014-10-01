@@ -1,0 +1,39 @@
+<div data-role="view" data-layout="overview-layout" id="overview-member" data-title="Information" 
+	data-show="initMemberVM" data-model="memberVM">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a class="nav-button" data-align="left" data-role="backbutton">Back</a>
+            <span data-role="view-title"></span>
+        </div>
+    </header>
+    <h1>Information</h1>
+    <ul id="settings-view" data-index="0">
+        <li>Profile</li>
+        <li>General</li>
+        <li>Economic Info</li>
+    </ul>
+    <ul data-role="listview" data-style="inset" data-type="group">
+        <li>
+            Profile
+            <ul data-role="listview" id="listInfo">
+            </ul>
+        </li>
+        <li>
+            General
+            <ul data-role="listview" id="listGral">
+            </ul>
+        </li>
+       
+    </ul>
+    <ul data-role="listview" data-style="inset" data-type="group" style="display:none" id="listEco">
+        <li>
+            Group
+            <ul>
+                <li><a>Another</a></li>
+                <li><a>Another</a></li>
+            </ul>
+        </li>
+    </ul>
+    <script src="../../js/app/model/member.js"></script>
+    <script src="../../js/app/vm/members/member.js"></script>
+</div>

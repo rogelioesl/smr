@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SMR</title>
+        <link href="../../css/lib/kendo/kendo.common.min.css" rel="stylesheet" />
+        <link href="../../css/lib/kendo/kendo.default.min.css" rel="stylesheet" />
+        <link href="../../css/lib/kendo/kendo.mobile.all.min.css" rel="stylesheet" />
+        <link href="../../css/app/smr.css" rel="stylesheet" />
+        <script src="../../js/lib/jq/jquery.min.js"></script>
+        <script src="../../js/lib/kendo/kendo.all.min.js"></script>
+    </head>
+    <body>
+        <div data-role="view" id="drawer-members" data-layout="drawer-layout" data-title="Home">
+            home
+        </div>
+        <div data-role="drawer" id="my-drawer" style="width: 200px" data-views="['drawer-members', 'drawer-consults']">
+            <ul data-role="listview" data-type="group">
+                <li>
+                    Consults
+                    <ul>
+                        <li data-icon="inbox">
+                            <a href="../../app/members/members.html" data-transition="none">Members</a>
+                        </li>
+                        <li data-icon="star">
+                            <a href="../../app/consults/consults.html" data-transition="none">Consults</a>
+                        </li>
+                        <li data-icon="compose">Doctors</li>
+                    </ul>
+                </li>
+                <li>
+                    Events
+                    <ul>
+                        <li>Today</li>
+                        <li>This week</li>
+                        <li>Next Week</li>
+                    </ul>
+                </li>
+                <li>
+                    Account
+                    <ul>
+                        <li data-icon="settings">Settings</li>
+                        <li data-icon="off">
+                            <a data-transition="none">Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div data-role="layout" data-id="drawer-layout">
+            <header data-role="header">
+                <div data-role="navbar">
+                    <a data-role="button" data-rel="drawer" href="#my-drawer" data-icon="drawer-button" data-align="left"></a>
+                    <span data-role="view-title"></span>
+                </div>
+            </header>
+        </div>
+
+        <script>
+            // reset global drawer instance, for demo purposes
+            kendo.mobile.ui.Drawer.current = null;
+        </script>
+
+    <style>
+        .km-ios #my-drawer .km-content, .km-android #my-drawer .km-content, .km-blackberry #my-drawer .km-content,
+        .km-ios #my-drawer .km-list > li, .km-android #my-drawer .km-list > li, .km-blackberry #my-drawer .km-list > li,
+        .km-ios #my-drawer .km-listview-link > .km-icon, .km-android #my-drawer .km-listview-link > .km-icon, .km-blackberry #my-drawer .km-listview-link > .km-icon,
+        .km-ios #my-drawer .km-list li > .km-icon, .km-android #my-drawer .km-list li > .km-icon, .km-blackberry #my-drawer .km-list li > .km-icon
+        {
+            background-color: #4e4e4e;
+            color: #fff;
+        }
+
+        .km-ios #my-drawer .km-group-title,
+        .km-blackberry #my-drawer .km-group-title
+        {
+            background-color: #6e6e6e;
+            color: #fff;
+        }
+
+        .km-drawer-button:before, .km-drawer-button:after  { content: "\E077"; }
+        .km-inbox:before, .km-inbox:after { content: "\E0B0"; }
+        .km-sent:before, .km-sent:after { content: "\E0C6"; }
+        .km-trash:before, .km-trash:after { content: "\E0C3"; }
+        .km-spam:before, .km-spam:after { content: "\E0C5"; }
+        .km-star:before, .km-star:after { content: "\E0D7"; }
+        .km-settings:before, .km-settings:after { content: "\E0DA"; }
+        .km-off:before, .km-off:after { content: "\E0B9"; }
+
+        .inboxList
+        {
+            font-size: .8em;
+        }
+
+        .inboxList p,
+        .inboxList h2,
+        .inboxList h3
+        {
+            margin: 5px 2px;
+        }
+
+        .inboxList p,
+        .inboxList h3
+        {
+            color: #777;
+        }
+
+        .inboxList h3.time
+        {
+            color: #369;
+            float: left;
+            margin-right: 10px;
+        }
+    </style>
+    <script>
+        var app = new kendo.mobile.Application(document.body);
+    </script>
+    <body>
+</html>
