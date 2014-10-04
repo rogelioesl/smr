@@ -16,15 +16,17 @@
         <div data-role="drawer" id="my-drawer" style="width: 200px" data-views="['drawer-members', 'drawer-consults']">
             <ul data-role="listview" data-type="group">
                 <li>
-                    Consults
+                    Menu
                     <ul>
                         <li data-icon="inbox">
                             <a href="../../app/members/members.html" data-transition="none">Members</a>
                         </li>
                         <li data-icon="star">
-                            <a href="../../app/consults/consults.html" data-transition="none">Consults</a>
+                            <a data-transition="none">Consults</a>
                         </li>
-                        <li data-icon="compose">Doctors</li>
+                        <li data-icon="compose">
+                            Doctors
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -57,7 +59,6 @@
         </div>
 
         <script>
-            // reset global drawer instance, for demo purposes
             kendo.mobile.ui.Drawer.current = null;
         </script>
 

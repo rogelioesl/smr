@@ -1,0 +1,32 @@
+{
+    "members": [
+        {
+            "id":"1",
+            "name": "Daniel",
+            "photo": "../../images/members/daniel.jpg",
+            "birthdate": "09/12/1985",
+            "bornplace": "Michocan"
+        },
+        {
+            "id":"2",
+            "name": "Eduardo",
+            "photo": "../../images/members/eduardo.jpg",
+            "birthdate": "15/07/1984",
+            "bornplace": "Quintana Roo"
+        },
+        {
+            "id":"3",
+            "name": "Judith",
+            "photo": "../../images/members/judith.jpg",
+            "birthdate": "14/09/1777",
+            "bornplace": "Guanajuato"
+        },
+        {
+            "id":"4",
+            "name": "Roberto",
+            "photo": "../../images/members/roberto.jpg",
+            "birthdate": "05/11/1972",
+            "bornplace": "San Luis Potosi"
+        }
+    ]
+}

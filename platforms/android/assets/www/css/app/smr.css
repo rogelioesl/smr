@@ -1,4 +1,5 @@
 /* kendo redefition class */
+
 .km-pane h1 {
 	text-align: center;
 }
@@ -13,6 +14,12 @@
 	display: block;
 	margin: 2em;
 	text-align: center;
+}
+
+#back .km-arrow-w:after,
+#back .km-arrow-w:before
+{
+    content: "\e013";
 }
 
 /* custom class */
