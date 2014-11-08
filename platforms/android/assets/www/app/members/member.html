@@ -1,28 +1,115 @@
-<div data-role="view" data-layout="overview-layout" id="overview-member" data-title="Information" data-show="initMemberVM" data-model="memberVM">
+<div data-role="view" data-layout="overview-layout" id="tabstrip-information" data-title="Information" data-show="initMemberVM" data-model="memberVM">
     <header data-role="header">
-        <div data-role="navbar">
-            <a class="nav-button" data-align="left" data-role="backbutton">Back</a>
-            <span data-role="view-title"></span>
-        </div>
+		<div id="toolbarOptions" ></div>
     </header>
-    <h1>Information</h1>
-    <ul id="settings-view" data-index="0">
-        <li>Perinatal</li>
-        <li>Nutritional</li>
-        <li>Medical</li>
-    </ul>
-    <ul data-role="listview" data-style="inset" data-type="group">
-        <li>
-            Profile
-            <ul id="liPersonalInformation" data-role="listview">
-            </ul>
-        </li>
-        <li>
-            General
-            <ul id="liGeneral" data-role="listview">
-            </ul>
-        </li>
-    </ul>
+		<ul id="liPersonalInformation">
+<!--
+			<li>
+                <label>
+                    Name
+                    <input type="text" value="Ana" />
+                </label>
+            </li>
+			
+			<li>
+                <label>
+                    Lastname
+                    <input type="text" value="Gutierrez" />
+                </label>
+            </li>
+			<li>
+                <label>
+                    Maternal
+                    <input type="text" value="Nava" />
+                </label>
+            </li>
+			<li>
+                <label>
+                    Birthdate
+                  
+					<input type="date" value="2012-03-22" style="font-size:12pt;"/>
+                </label>
+            </li>
+			<li>
+				Gender
+				 <select id="dropdown">
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                    </select>
+			</li>
+			<li>
+				<label>
+					Birthplace
+					<input type="text" value="Huixquilucan de Degollado"/>
+				</label>
+			</li>
+			<li>
+				<label>
+					Full Age
+					<input type="text" value="24Y 6M 18D 13H 14M 15S" >
+				</label>
+			</li>
+
+			-->
+		</ul>		
+		
+	  <div data-role="footer">
+        <div data-role="tabstrip">
+            <a href="#tabstrip-information" data-icon="contacts">Information</a>
+			<a href="#tabstrip-history" data-icon="history">History</a>
+        </div>
+    </div>
+	<!--
+	   <script>
+            $(document).ready(function() {
+                // create DatePicker from input HTML element
+                $("#datepicker").kendoDatePicker();
+            });
+        </script>
+    -->
+	
     <script src="../../js/app/model/member.js"></script>
     <script src="../../js/app/vm/members/member-vm.js"></script>
 </div>
+
+<div data-role="view" data-layout="overview-layout" id="tabstrip-history" data-title="Information" data-show="initMemberVM" data-model="memberVM">
+    <header data-role="header">
+		<div id="toolbarOptions2" ></div>
+    </header>
+
+	
+			<ul data-role="buttongroup" data-index="0">
+				<li>Perinatal</li>
+				<li>Nutritional</li>
+				<li>Medical</li>
+			</ul>
+		
+	  <div data-role="footer">
+        <div data-role="tabstrip">
+            <a href="#tabstrip-information" data-icon="contacts">Information</a>
+			<a href="#tabstrip-history" data-icon="history">History</a>
+        </div>
+    </div>
+	
+    <script src="../../js/app/model/member.js"></script>
+    <script src="../../js/app/vm/members/member-vm.js"></script>
+</div>
+
+
+<!--
+<div data-role="view" id="tabstrip-information" data-title="Profile" data-layout="mobile-tabstrip">
+    <ul data-role="listview" data-style="inset" data-type="group">
+        <li>Prof
+
+        </li>
+    </ul>
+</div>
+
+<div data-role="view" id="tabstrip-history" data-title="Sales History" data-layout="mobile-tabstrip">
+    <ul data-role="listview" data-style="inset" data-type="group">
+        <li>
+            Sales 2011
+      
+        </li>
+    </ul>
+</div>-->

@@ -2,31 +2,48 @@
     "members": [
         {
             "id":"1",
-            "name": "Daniel",
+            "name": "Fernando",
+			"lastname":"Cortes",
+			"maternal":"Diaz",
             "photo": "../../images/members/daniel.jpg",
             "birthdate": "09/12/1985",
-            "bornplace": "Michocan"
+			"gender":"Male",
+            "bornplace": "Mexico DF",
+			"fullage":"24Y-6M-18D"
+			
         },
         {
             "id":"2",
-            "name": "Eduardo",
+            "name": "Victor",
+			"lastname":"Hernandez",
+			"maternal":"Carrillo",
             "photo": "../../images/members/eduardo.jpg",
             "birthdate": "15/07/1984",
-            "bornplace": "Quintana Roo"
+			"gender":"Male",
+            "bornplace": "Quintana Roo",
+			"fullage":"35Y-4M-10D"
         },
         {
             "id":"3",
             "name": "Judith",
+			"lastname":"Salazar",
+			"maternal":"Murillo",
             "photo": "../../images/members/judith.jpg",
-            "birthdate": "14/09/1777",
-            "bornplace": "Guanajuato"
+            "birthdate": "01/02/1980",
+			"gender":"Female",
+            "bornplace": "Guanajuato",
+			"fullage":"30Y-2M-5D"
         },
         {
             "id":"4",
             "name": "Roberto",
+			"lastname":"Mendoza",
+			"maternal":"Soto",
             "photo": "../../images/members/roberto.jpg",
             "birthdate": "05/11/1972",
-            "bornplace": "San Luis Potosi"
+			"Gender":"Male",
+            "bornplace": "San Luis Potosi",
+			"fullage":"27Y-9M-3D"
         }
     ]
 }
