@@ -5,8 +5,8 @@
 
 function initGeneralVM(e) {
 
-    var listviews = $("ul.km-listview");
-
+    var listviews = $("ul.km-listview.km-list");
+    //console.log(listviews);
      $("#select-period").kendoMobileButtonGroup({
             select: function(e) {
                 listviews.hide()
