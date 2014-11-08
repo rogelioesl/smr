@@ -1,0 +1,44 @@
+<div data-role="view" id="drawer-general" data-layout="drawer-layout" data-title="General"  data-show="initGeneralVM">
+    <header data-role="header">
+        <div id="toolbar"></div>
+    </header>
+    
+    <ul id="select-period">
+        <li>
+            Month
+        </li>
+        <li>
+            Quarter
+        </li>
+        <li>
+            Year
+        </li>
+    </ul>
+    <ul data-role="listview" data-style="inset">
+        <li>January <span class="sales-up">↑ $ 35,000</span></li>
+        <li>February <span class="sales-down">↓ $ 25,000</span></li>
+        <li>March <span class="sales-down">↓ $ 23,000</span></li>
+        <li>April <span class="sales-up">↑ $ 30,000</span></li>
+        <li>May <span class="sales-up">↑ $ 31,000</span></li>
+        <li>June <span class="sales-down">↓ $ 29,000</span></li>
+        <li>July <span class="sales-up">↑ $ 35,000</span></li>
+        <li>August <span class="sales-up">↑ $ 37,000</span></li>
+        <li>September <span class="sales-hold">→ $ 37,000</span></li>
+        <li>October <span class="sales-hold">→ $ 37,000</span></li>
+        <li>November <span class="sales-up">↑ $ 38,000</span></li>
+        <li>December <span class="sales-up">↑ $ 40,000</span></li>
+    </ul>
+    <ul data-role="listview" data-style="inset" style="display:none">
+        <li>1st Quarter <span class="sales-up">↑ $ 83,000</span></li>
+        <li>2nd Quarter <span class="sales-up">↑ $ 90,000</span></li>
+        <li>3rd Quarter <span class="sales-up">↑ $ 109,000</span></li>
+        <li>4th Quarter <span class="sales-up">↑ $ 115,000</span></li>
+    </ul>
+    <ul data-role="listview" data-style="inset" style="display:none">
+        <li>2009 <span class="sales-up">↑ $ 120,000</span></li>
+        <li>2010 <span class="sales-down">↓ $ 109,000</span></li>
+        <li>2011 <span class="sales-hold">→ $ 109,000</span></li>
+    </ul>
+
+    <script src="../../js/app/vm/general/general-vm.js"></script>
+</div>
